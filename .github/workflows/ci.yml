@@ -25,12 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Make build dir
-        run: | 
-          - mkdir build
-          - cd build
-
       # Runs a set of commands using the runners shell
       - name: cmake
         run: cmake ..
